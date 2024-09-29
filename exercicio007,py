@@ -1,0 +1,17 @@
+def classificar_planta():
+    try:
+        altura = float(input("Digite a altura da planta em metros: "))
+
+        if altura < 1:
+            classificacao = "pequena"
+        elif 1 <= altura <= 3:
+            classificacao = "média"
+        else:
+            classificacao = "grande"
+
+        print(f"A planta é classificada como {classificacao}.")
+    
+    except ValueError:
+        print("Por favor, insira um número válido para a altura.")
+
+classificar_planta()
